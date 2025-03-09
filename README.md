@@ -1,6 +1,6 @@
 # Image Classifier Project
 
-This project is part of the Udacity Machine Learning Nanodegree. It trains a deep learning model using TensorFlow and Keras to classify flowers from images.
+This project trains a deep learning model using TensorFlow and Keras to classify flowers from images.
 
 ##  Project Files
 - `Project_Image_Classifier_Project.ipynb` - Jupyter notebook for training and testing the model.
