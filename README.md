@@ -1,12 +1,18 @@
-# Intro to Machine Learning - TensorFlow Project
+# Image Classifier Project
 
-Project code for Udacity's Intro to Machine Learning with TensorFlow Nanodegree program. In this project, you will first develop code for an image classifier built with TensorFlow, then you will convert it into a command line application.
+This project is part of the Udacity Machine Learning Nanodegree. It trains a deep learning model using TensorFlow and Keras to classify flowers from images.
 
-In order to complete this project, you will need to use the GPU enabled workspaces within the classroom.  The files are all available here for your convenience, but running on your local CPU will likely not work well.
+##  Project Files
+- `Project_Image_Classifier_Project.ipynb` - Jupyter notebook for training and testing the model.
+- `predict.py` - Command-line script for predicting flower names from images.
+- `flower_classifier.keras` - Saved trained model.
+- `label_map.json` - Maps class labels to flower names.
+- `assets/` & `test_images/` - Example images for testing.
 
-You should also only enable the GPU when you need it. If you are not using the GPU, please disable it so you do not run out of time!
+## How to Use
+### **Train the Model (Notebook)**
+Run the Jupyter notebook to train the model and save it as `flower_classifier.keras`.
 
-### Data
-
-The data for this project is quite large - in fact, it is so large you cannot upload it onto Github.  If you would like the data for this project, you will want download it from the workspace in the classroom.  Though actually completing the project is likely not possible on your local unless you have a GPU.  You will be training using 102 different types of flowers, where there ~20 images per flower to train on.  Then you will use your trained classifier to see if you can predict the type for new images of the flowers.
-
+### **Predict Flowers from the Command Line**
+```bash
+python predict.py test_images/orange_dahlia.jpg --model flower_classifier.keras --category_names label_map.json --top_k 5
