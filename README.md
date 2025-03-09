@@ -7,7 +7,7 @@ This project trains a deep learning model using TensorFlow and Keras to classify
 - `predict.py` - Command-line script for predicting flower names from images.
 - `flower_classifier.keras` - Saved trained model.
 - `label_map.json` - Maps class labels to flower names.
-- `assets/` & `test_images/` - Example images for testing.
+- `test_images/` - Example images for testing.
 
 ## How to Use
 ### **Train the Model (Notebook)**
